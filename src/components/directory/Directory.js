@@ -40,7 +40,7 @@ export default class Directory extends Component {
           id: 4
         },
         {
-          title: 'Nut and seeds',
+          title: 'Nuts and seeds',
           subtitle: 'just nuts for seeds',
           imageSrc: imgnuts,
           id: 5

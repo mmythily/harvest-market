@@ -1,32 +1,35 @@
 .menu-item {
-  height: 240px;
+  height: 250px;
+  min-width: 250px;
   flex: auto 1 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  border: 2px solid green;
   margin: 0 7.5px 15px;
   background-size: cover;
+  overflow: hidden;
 
   .content {
-    height: 90px;
+    height: 100px;
     padding: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    border: 1px solid greenyellow;
+    opacity: .9;
 
     .title {
       font-weight: bold;
+      text-align: center;
       margin-bottom: 6px;
-      font-size: 22px;
+      font-size: 1.5rem;
       color: black;
     }
 
     .subtitle {
-      font-weight: lighter;
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }
