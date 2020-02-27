@@ -2,11 +2,11 @@ import React from 'react'
 import {withRouter} from 'react-router-dom'
 import './menuitem.scss'
 
-function MenuItem({title, subtitle, imageSrc, history, match, linkUrl}) {
+function MenuItem({title, subtitle, imageSrc, history, match, routeName}) {
   return (
     <div 
       className='menu-item'
-      onClick={() => history.push(`${match.url}${linkUrl}`)}
+      onClick={() => history.push(`${match.url}${routeName}`)}
       style={{
         backgroundImage: `url(${imageSrc})`
       }}

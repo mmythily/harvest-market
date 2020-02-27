@@ -1,12 +1,18 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import './homePage.scss'
-import Directory from '../../components/directory/Directory'
+import MenuList from '../../components/menu-list/MenuList';
 
 export default function HomePage() {
   return (
     <div className='homepage'>
-      <h1>Harvest Market</h1>
-      <Directory />
+      <nav>
+        <ul>
+          <li><Link to='/'>Harvest Market </Link></li>
+          <li><Link to='/produce'> Produce</Link></li>
+        </ul>
+      </nav>
+      <MenuList />
     </div>
   )
 }
