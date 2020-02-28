@@ -11,6 +11,7 @@ function MenuCollection({title, items}) {
             <img src={item.src} /><br/>
             <p id='item-name'>{item.name}</p>
             <p id='item-price'>${item.price}.00</p>
+            <button>Add</button>
           </article>
         ))}
       </div>

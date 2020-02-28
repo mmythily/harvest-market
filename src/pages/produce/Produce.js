@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './produce.scss'
 import MenuCollection from '../../components/menu-collection/MenuCollection'
+import Nav from '../../components/navigation/Nav'
 
 export default class Produce extends Component {
   constructor (){
@@ -132,12 +133,15 @@ export default class Produce extends Component {
   }
   render() {
     return (
-      <div className='produce-list'>
-        {this.state.produceData
-          .map(({id, title, items}) => (
-            <MenuCollection key={id} title={title} items={items}/>
-          ))}
-      </div>
+      <>
+        <Nav />
+        <div className='produce-list'>
+          {this.state.produceData
+            .map(({id, title, items}) => (
+              <MenuCollection key={id} title={title} items={items}/>
+            ))}
+        </div>
+      </>
     )
   }
 }
