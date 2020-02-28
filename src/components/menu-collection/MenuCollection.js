@@ -1,24 +1,20 @@
 import React from 'react'
 import './menucollection.scss'
 
-function MenuCollection({title, items, id}) {
+function MenuCollection({title, items}) {
   return (
-    <div 
-      className='menu-collect'
-      
-      >
-      <div className='collect'>
-        <div className='title'>{title}</div>
-        <div>
+    <>
+      <h1 id='item-title'>{title.toUpperCase()}</h1>
+      <div className='menu-collection'>
         {items.map(item => (
-          <div>
-            {item.name}
-            {item.price}
-          </div>
+          <article id='item-article'>
+            <img src={item.src} /><br/>
+            <p id='item-name'>{item.name}</p>
+            <p id='item-price'>${item.price}.00</p>
+          </article>
         ))}
-        </div>
       </div>
-    </div>
+    </>
   )
 }
 

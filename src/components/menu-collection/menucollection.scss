@@ -1,3 +1,16 @@
-.title{
-  font-size: 2em;
+.menu-collection {
+  display: flex;
 }
+
+#item-title{
+}
+
+#item-article{
+  margin:10px;
+  
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
