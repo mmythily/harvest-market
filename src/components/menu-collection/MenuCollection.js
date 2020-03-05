@@ -8,7 +8,7 @@ function MenuCollection({title, items}) {
       <div className='menu-collection'>
         {items.map(item => (
           <article id='item-article'>
-            <img src={item.src} /><br/>
+            <img src={item.src} alt={item.name}/><br/>
             <p id='item-name'>{item.name}</p>
             <p id='item-price'>${item.price}.00</p>
             <button>Add</button>
