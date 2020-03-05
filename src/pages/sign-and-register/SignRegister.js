@@ -31,7 +31,7 @@ export default class SignRegister extends React.Component {
         <h2>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
-        <form onSubmit={this.handleSubmit} onChange={handleChange}>
+        <form onSubmit={this.handleSubmit} >
           <input
             name='email'
             type='email'
