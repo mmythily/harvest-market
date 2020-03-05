@@ -3,3 +3,4 @@
 Dependencies
 - Node SASS
 - React Router
+- Redux
