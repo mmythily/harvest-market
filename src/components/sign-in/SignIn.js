@@ -3,10 +3,9 @@ import FormInput from '../form-input/FormInput'
 import CustomButton from '../custom-button/CustomButton'
 import './sign-in.scss'
 
-
 export default class SignIn extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       email: '',

@@ -4,9 +4,9 @@ import SignIn from '../../components/sign-in/SignIn'
 
 export default function SignRegister() {
   return (
-    <div>
+    <>
       <Nav/>
       <SignIn />
-    </div>
+    </>
   )
 }
